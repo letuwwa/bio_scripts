@@ -3,8 +3,8 @@ class ReactionMixture:
         self.reaction_mixture_volume = self.reaction_mixture_volume_input()
         self.dnc_volume = 2.0
         self.mix2x_volume = self.reaction_mixture_volume / 2
-        self.water_volume = self.reaction_mixture_volume - self.mix2x_volume - self.dnc_volume
         self.primers = self.reaction_mixture_volume * 6e-3
+        self.water_volume = self.reaction_mixture_volume - self.mix2x_volume - self.dnc_volume - self.primers
         self.result_print()
 
     def result_print(self):
